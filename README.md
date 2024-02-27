@@ -47,3 +47,9 @@ docker-compose up --build
 ```
 
 2. Go to "http://localhost:5100"
+
+# P.S
+
+Even though I've tried to add tests to frontend as well, I haven't done it because I encoutered a problem with mocking url parameters using both jest and vitest and it was taking way to long to resolve, but of course in real world app I would do UI tests that would check the validity of html output.
+
+# Thanks for your time!
