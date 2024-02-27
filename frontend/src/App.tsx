@@ -1,5 +1,11 @@
+import UserData from "./pages/UserData";
+
 const App = () => {
-  return <div>App</div>;
+  return (
+    <>
+      <UserData />
+    </>
+  );
 };
 
 export default App;
