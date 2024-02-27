@@ -42,5 +42,8 @@ npm run dev
 
 1. You need to be inside "lineup-test" folder and Docker should be running
 
-docker build -t backend .
-docker run -d --name python_be -p 8000:8000 backend
+```bash
+docker-compose up --build
+```
+
+2. Go to "http://localhost:5100"
