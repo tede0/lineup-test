@@ -2,7 +2,8 @@ import { useQuery } from "react-query";
 import { User } from "../types/User";
 
 const fetchUserData = async (userId: number): Promise<User> => {
-  const response = await fetch(`http://localhost:8000/user/${userId}`);
+  const baseUrl = process.env.REACT_APP_API_BASE_URL || "http://localhost:8000";
+  const response = await fetch(`${baseUrl}/user/${userId}`);
   if (!response.ok) {
     throw new Error("Network response was not ok");
   }
