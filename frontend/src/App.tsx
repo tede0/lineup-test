@@ -1,10 +1,15 @@
-import UserData from "./pages/UserData";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import UserProfile from "./pages/UserProfile";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <>
-      <UserData />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/:userId" element={<UserProfile />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
